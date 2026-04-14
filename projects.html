@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets — Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html"><span class="logo"> MATHIEU <span> MEZIERE </span></span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projects.html" class="active">Projets</a></li>
+                <li><a href="company.html">Alternance</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+            <div class="burger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="page-header">
+        <div class="container">
+            <p class="section-label">Portfolio</p>
+            <h1>Mes projets</h1>
+            <p>Réalisations scolaires et personnelles — BTS SIO SLAM</p>
+        </div>
+    </div>
+
+    <!-- PROJETS -->
+    <section>
+        <div class="container">
+
+            <!-- Filtres -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="year1">1re année</button>
+                <button class="filter-btn" data-filter="year2">2e année</button>
+                <button class="filter-btn" data-filter="personal">Personnel</button>
+            </div>
+
+            <!-- 1re année -->
+            <div class="year-block">
+                <p class="year-label">1re année — 2024 / 2025</p>
+                <div class="projects-grid">
+
+                    <div class="project-card" data-category="year1">
+                        <div class="project-top">
+                            <h3>Site vitrine</h3>
+                            <!-- <a href="#" class="github-link" title="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a> -->
+                        </div>
+                        <p>Création d'un site web vitrine pour une entreprise fictive. Mise en pratique des bases HTML/CSS avec responsive design et accessibilité.</p>
+                        <div class="tech-list">
+                            <span class="tech-pill">HTML5</span>
+                            <span class="tech-pill">CSS3</span>
+                            <span class="tech-pill">JavaScript</span>
+                            <span class="tech-pill">SQL</span>
+                            <span class="tech-pill">PHP</span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="project-card" data-category="year1">
+                        <div class="project-top">
+                            <h3>Application de gestion de stock</h3>
+                            <a href="#" class="github-link" title="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <p>Application web CRUD complète avec gestion des articles, des fournisseurs et un système d'authentification basique.</p>
+                        <div class="tech-list">
+                            <span class="tech-pill">PHP</span>
+                            <span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="year1">
+                        <div class="project-top">
+                            <h3>Script d'automatisation Python</h3>
+                            <a href="#" class="github-link" title="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <p>Script de traitement automatique de fichiers CSV : nettoyage de données, calcul de statistiques et génération de rapports.</p>
+                        <div class="tech-list">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">CSV</span>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+            <!-- 2e année -->
+            <div class="year-block">
+                <p class="year-label">2e année — 2024 / 2025</p>
+                <div class="projects-grid">
+
+                    <div class="project-card" data-category="year2">
+                        <div class="project-top">
+                            <h3>Repair Matos</h3>
+                            <!-- <a href="#" class="github-link" title="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg> -->
+                            </a>
+                        </div>
+                        <p>Conception d'une application C#.net, de gestion de matériel informatique et clients.</p>
+                        <div class="tech-list">
+                            <span class="tech-pill">C#</span>
+                            <span class="tech-pill">.NET</span>
+                            <span class="tech-pill">SQL Server</span>
+                            
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+
+            <!-- Personnel -->
+            <div class="year-block">
+                <p class="year-label">Projets personnels</p>
+                <div class="projects-grid">
+
+                    <div class="project-card" data-category="personal">
+                        <div class="project-top">
+                            <h3>Ce portfolio</h3>
+                            <!-- <a href="#" class="github-link" title="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a> -->
+                        </div>
+                        <p>Portfolio personnel développé en HTML, CSS et JavaScript vanilla. Design minimaliste et professionnel, entièrement responsive.</p>
+                        <div class="tech-list">
+                            <span class="tech-pill">HTML5</span>
+                            <span class="tech-pill">CSS3</span>
+                            <span class="tech-pill">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="personal">
+                        <div class="project-top">
+                            <h3>Bot Discord</h3>
+                            <!-- <a href="#" class="github-link" title="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                            </a> -->
+                        </div>
+                        <p>Bot Discord multifonction avec système de modération, niveaux et commandes personnalisées. Utilisé sur plusieurs serveurs.</p>
+                        <div class="tech-list">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Discord.py</span>
+                            <span class="tech-pill">SQLite</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Mathieu MEZIERE</p>
+            <div class="footer-links">
+                <a href="https://github.com/MathieuMeziere" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/meziere-mathieu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:mameziere@gmail.com">mameziere@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

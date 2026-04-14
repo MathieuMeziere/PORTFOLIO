@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV — Mathieu MEZIERE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html"><span class="logo">MATHIEU <span>MEZIERE</span></span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="company.html">Alternance</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="cv.html" class="active">CV</a></li>
+            </ul>
+            <div class="burger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER PAGE -->
+    <div class="page-header">
+        <div class="container">
+            <p class="section-label">Curriculum Vitae</p>
+            <h1>Mon CV</h1>
+            <p>Téléchargeable au format PDF</p>
+        </div>
+    </div>
+
+    <!-- VISUALISEUR PDF -->
+    <section class="cv-viewer-section">
+        <div class="container">
+            <!-- Bouton téléchargement -->
+            <div class="cv-download-bar">
+                <p>Vous pouvez télécharger mon CV au format PDF</p>
+                <a href="assets/CV_Mathieu_MEZIERE.pdf" download="CV_Mathieu_MEZIERE.pdf" class="btn btn-primary">
+                    Télécharger le PDF
+                </a>
+            </div>
+
+            <!-- Visualiseur PDF intégré -->
+            <div class="pdf-viewer">
+                <embed 
+                    src="assets/CV_Mathieu_MEZIERE.pdf" 
+                    type="application/pdf" 
+                    width="100%" 
+                    height="800px"
+                />
+                <p class="pdf-fallback">
+                    Votre navigateur ne peut pas afficher le PDF. 
+                    <a href="assets/CV_Mathieu_MEZIERE.pdf" download>Cliquez ici pour le télécharger</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 Mathieu MEZIERE</p>
+            <div class="footer-links">
+                <a href="https://github.com/MathieuMeziere" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/meziere-mathieu" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:mameziere@gmail.com">mameziere@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
