@@ -60,7 +60,10 @@ img   { max-width: 100%; display: block; }
    LAYOUT
    ================================ */
 .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
-section { padding: 5rem 0; }
+section { padding: 5rem 0; background: var(--bg); border-bottom: 1px solid var(--border); }
+section.no-separator { border-bottom: none; }
+
+.section-white { background: var(--bg); border-bottom: 1px solid var(--border); }
 
 .section-label {
     font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em;
@@ -83,7 +86,7 @@ section { padding: 5rem 0; }
    ================================ */
 .page-header {
     padding-top: 120px; padding-bottom: 3rem;
-    background: var(--bg-soft); border-bottom: 1px solid var(--border);
+    background: var(--bg); border-bottom: 1px solid var(--border);
 }
 .page-header h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; letter-spacing: -0.03em; }
 .page-header p  { color: var(--text-muted); margin-top: 0.5rem; font-size: 1.05rem; }
@@ -116,17 +119,22 @@ section { padding: 5rem 0; }
 .dot-green { width: 8px; height: 8px; background: #22c55e; border-radius: 50%; display: inline-block; }
 
 .hero-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.hero-actions { display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-start; }
 
 .btn { display: inline-block; padding: 0.65rem 1.5rem; border-radius: var(--radius); font-size: 0.9rem; font-weight: 600; border: 1px solid transparent; transition: background 0.2s, color 0.2s, border-color 0.2s; }
 .btn-primary { background: var(--primary); color: #fff; }
 .btn-primary:hover { background: #1d4ed8; }
 .btn-outline { background: transparent; color: var(--text); border-color: var(--border); }
 .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+.btn-secondary { background: transparent; color: var(--text); border-color: var(--border); }
+.btn-secondary:hover { border-color: var(--primary); color: var(--primary); }
+
+.action-buttons { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 
 /* ================================
    ABOUT (accueil)
    ================================ */
-.about { background: var(--bg-soft); }
+.about { background: var(--bg); }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
 .about-text p { color: var(--text-muted); margin-bottom: 1.25rem; line-height: 1.8; }
 .about-text strong { color: var(--text); font-weight: 600; }
@@ -572,7 +580,7 @@ section { padding: 5rem 0; }
    PAGE CV - VISUALISEUR PDF
    ================================ */
 .cv-viewer-section {
-    background: var(--bg-soft);
+    background: var(--bg);
 }
 
 .cv-download-bar {
